@@ -66,8 +66,8 @@ spec:
           volumeMounts:
             - mountPath: /config
               name: config
-             {{- if .Values.persistence.configs.subPath }}
-              subPath: {{ .Values.persistence.configs.subPath }}
+             {{- if .Values.persistence.config.subPath }}
+              subPath: {{ .Values.persistence.config.subPath }}
             {{- end }}
             - mountPath: /books
               name: books
